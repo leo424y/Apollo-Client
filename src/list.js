@@ -39,7 +39,7 @@ const ExchangeRateList = ({
         .filter(
           ({ currency }) =>
             currency !== currentCurrency &&
-            ["USD", "BTC", "LTC", "EUR", "JPY", "ETH"].includes(currency)
+            ["USD", "TWD", "BTC", "LTC", "EUR", "JPY"].includes(currency)
         )
         .map(({ currency, rate }, idx, rateArr) => (
           <TouchableOpacity
@@ -69,7 +69,7 @@ const styles = StyleSheet.create({
     padding: 20
   },
   currencyWrapper: {
-    padding: 20,
+    padding: 10,
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
